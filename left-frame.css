@@ -1,0 +1,27 @@
+button {
+  display: inline-block;
+  padding-top:5px;
+  padding-bottom:5px;
+  margin-top:12px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #000000;
+  border: none;
+  border-radius: 19px;
+  box-shadow: 0 9px #A782F0;
+  width:100%;
+  font-family:cursive;
+  color:white;
+}
+
+button:hover {background:radial-gradient(#F477BA,#FA062F)
+}
+
+button:active {
+  background-color: #5FF504;
+  box-shadow: 0 5px #8F96F6;
+  transform: translateY(10px);
+}

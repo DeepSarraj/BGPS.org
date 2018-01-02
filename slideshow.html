@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="slideshow.css">
+    </head>
+    <body>
+    <div class="gallerySlider">
+            <div class="mySlides fade">
+                <img src="11.jpg" style="width: 100%">
+                </div>
+            <div class="mySlides fade">
+                <img src="05.jpg" style="width: 100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="12.jpg" style="width: 100%">
+        </div>
+        <div class="mySlides fade">
+                <img src="DSC_7061.jpg" style="width: 100%">
+        </div>
+        <div class="mySlides fade">
+                <img src="DSC_7035.jpg" style="width: 100%">
+        </div>
+            <div class="mySlides fade">
+                <img src="DSC_7060.jpg" style="width: 100%">
+        </div>
+        <div class="mySlides fade">
+                <img src="DSC_7065.jpg" style="width: 100%">
+        </div>
+            <div class="mySlides fade">
+                <img src="DSC_7066.jpg" style="width: 100%">
+        </div>
+            <div class="mySlides fade">
+                <img src="12.jpg" style="width: 100%">
+        </div>
+            <div class="mySlides fade">
+                <img src="11.jpg" style="width: 100%">
+        </div>
+            <div class="mySlides fade">
+                <img src="20160522_110830.jpg" style="width: 100%">
+        </div>
+            <div class="mySlides fade">
+                <img src="20160522_111102.jpg" style="width: 100%">
+        </div><div class="mySlides fade">
+                <img src="DSC_7109.jpg" style="width: 100%">
+        </div>
+            <div class="mySlides fade">
+                <img src="IMG_20160730_142648.jpg" style="width: 100%">
+        </div><div class="mySlides fade">
+                <img src="DSC_7069.jpg" style="width: 100%">
+        </div>
+            <div class="mySlides fade">
+                <img src="DSC_7071.jpg" style="width: 100%">
+        </div><div class="mySlides fade">
+                <img src="DSC_7065.jpg" style="width: 100%">
+        </div>
+            <div class="mySlides fade">
+                <img src="DSC_7071.jpg" style="width: 100%">
+        </div>
+            <div class="mySlides fade">
+                <img src="20160522_111102.jpg" style="width: 100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+            <span class="dot" onclick="currentSlide(13)"></span>
+            <span class="dot" onclick="currentSlide(14)"></span>
+            <span class="dot" onclick="currentSlide(15)"></span>
+            <span class="dot" onclick="currentSlide(16)"></span>
+            <span class="dot" onclick="currentSlide(17)"></span>
+            <span class="dot" onclick="currentSlide(18)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            
+            
+        </div>
+        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+             
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if(n>slides.length) {slideIndex = 1}
+                if(n<1) {slideIndex = slides.length}
+                for(i=0; i<slides.length; i++){
+                    slides[i].style.display = "none";
+                }
+                for(i=0; i<dots.length;i++){
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                setTimeout(function(){plusSlides(1)},3000);
+            }
+        </script>
+    </body>
+</html>

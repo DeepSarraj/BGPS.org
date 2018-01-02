@@ -1,0 +1,96 @@
+
+body
+{
+    width:auto;
+    height:auto;
+    text-align:center;
+    
+}
+header
+{
+    text-align:center;
+    height:auto;
+    color:#95F7ED;
+    margin-top:auto;
+    background-color:#000000;
+    font-family:cursive;
+    
+}
+#r
+{
+    text-align:right;
+    margin-top:-75px;
+    
+}
+#l
+{
+    text-align:left;
+}
+#pic
+{
+    height:90px;
+    float:inherit;
+    
+    
+}
+ul {
+    list-style-type:inherit;
+    height:auto;
+    width:auto;
+    overflow:auto;
+    background-color:#000;
+    padding-bottom:15px;
+    
+}
+
+li {
+    float: left;
+    margin;0 auto;
+}
+
+li a {
+    display:flex;
+    color: white;
+    text-align: center;
+    text-align:center;
+    text-decoration:inherit;
+    font-size:25pt;
+    font-family:monospace;
+    padding-left:50px;
+    padding-right:40px;
+}
+
+li a:hover {
+    background:radial-gradient(white,#1C1A1A);
+    
+}
+#footer
+{
+    font-size:15pt;
+    color:white;;
+    background-color:black;
+    font-family:fantasy;
+    text-align:center;
+    margin-top:3px;
+}
+iframe
+{
+    height:550px;
+    border-radius:19px;
+    border:2px;
+}
+#full
+{
+    height:330px;
+    background-image:url(nbg.jpg);
+    margin-top:10px;
+    border-radius:10px;
+}
+#main
+{
+  background-image: url(nbg.jpg);
+}
+#middle
+{
+    background-image: url(1063718_download-tri-nylon-texture-hd-wallpapers-for-2560-x-1440_2560x1440_h.jpg);
+}
